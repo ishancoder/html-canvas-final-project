@@ -25,11 +25,13 @@ function redrawMeme(image, topLine, bottomLine) {
   ctx.strokeStyle = "black";
   ctx.lineWidth = 3;
   ctx.fillStyle = "white";
+  //draws the top line of the pic
   if(topLine != null){
     ctx.fillText(topLine,canvas.width/2,40);
     ctx.strokeText(topLine,canvas.width/2,40);
   } 
 
+  //draws the bottom line of the pic
   if(bottomLine != null){
     ctx.fillText(bottomLine,canvas.width/2, canvas.height - 40);
     ctx.strokeText(bottomLine,canvas.width/2, canvas.height - 40);
